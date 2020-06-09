@@ -175,39 +175,56 @@ class PaymentServiceTest {
                     new PaymentItem("Kij do baseball", BigDecimal.valueOf(100), BigDecimal.valueOf(90)),
                     new PaymentItem("Buty sportowe", BigDecimal.valueOf(200), BigDecimal.valueOf(200))
             );
-            Payment payment1 = new Payment(adam, ZonedDateTime.of(2010, 10, 10, 10, 0, 0, 0, ZoneId.systemDefault()), paymentItems1);
+            Payment payment1 = new Payment( adam,
+                                            ZonedDateTime.of(2010, 10, 10, 10, 0, 0, 0, ZoneId.systemDefault()),
+                                            paymentItems1);
             payments.add(payment1);
 
             List<PaymentItem> paymentItems2 = Arrays.asList(
                     new PaymentItem("Piłka koszykowa", BigDecimal.valueOf(100), BigDecimal.valueOf(100)),
                     new PaymentItem("Kij do baseball", BigDecimal.valueOf(100), BigDecimal.valueOf(90))
             );
-            Payment payment2 = new Payment(adam, ZonedDateTime.of(2019, 4, 10, 10, 0, 0, 0, ZoneId.systemDefault()), paymentItems2);
+            Payment payment2 = new Payment( adam,
+                                            ZonedDateTime.of(2019, 4, 10, 10, 0, 0, 0,
+                                                            ZoneId.systemDefault()),
+                                            paymentItems2);
             payments.add(payment2);
 
             List<PaymentItem> paymentItems3 = Collections.singletonList(
                     new PaymentItem("Buty do biegania", BigDecimal.valueOf(230), BigDecimal.valueOf(200))
             );
-            Payment payment3 = new Payment(kasia, ZonedDateTime.of(2019, 4, 9, 10, 0, 0, 0, ZoneId.systemDefault()), paymentItems3);
+            Payment payment3 = new Payment( kasia,
+                                            ZonedDateTime.of(2019, 4, 9, 10, 0, 0, 0,
+                                                            ZoneId.systemDefault()),
+                                            paymentItems3);
             payments.add(payment3);
 
             List<PaymentItem> paymentItems4 = Collections.singletonList(
                     new PaymentItem("Pompka rowerowa", BigDecimal.valueOf(50), BigDecimal.valueOf(50))
             );
-            Payment payment4 = new Payment(edek, ZonedDateTime.of(2019, 3, 9, 10, 0, 0, 0, ZoneId.systemDefault()), paymentItems4);
+            Payment payment4 = new Payment( edek,
+                                            ZonedDateTime.of(2019, 3, 9, 10, 0, 0, 0,
+                                                            ZoneId.systemDefault()),
+                                            paymentItems4);
             payments.add(payment4);
 
             List<PaymentItem> paymentItems5 = Arrays.asList(
                     new PaymentItem("Siodełko rowerowe", BigDecimal.valueOf(119), BigDecimal.valueOf(119)),
                     new PaymentItem("Lampka rowerowa", BigDecimal.valueOf(50), BigDecimal.valueOf(50))
             );
-            Payment payment5 = new Payment(edek, ZonedDateTime.of(2018, 4, 9, 10, 0, 0, 0, ZoneId.systemDefault()), paymentItems5);
+            Payment payment5 = new Payment( edek,
+                                            ZonedDateTime.of(2018, 4, 9, 10, 0, 0, 0,
+                                                            ZoneId.systemDefault()),
+                                            paymentItems5);
             payments.add(payment5);
 
             List<PaymentItem> paymentItems6 = Collections.singletonList(
                     new PaymentItem("Rower", BigDecimal.valueOf(4000), BigDecimal.valueOf(4000))
             );
-            Payment payment6 = new Payment(edek, ZonedDateTime.of(2019, 3, 22, 10, 0, 0, 0, ZoneId.systemDefault()), paymentItems6);
+            Payment payment6 = new Payment( edek,
+                                            ZonedDateTime.of(2019, 3, 22, 10, 0, 0, 0,
+                                                            ZoneId.systemDefault()),
+                                            paymentItems6);
             payments.add(payment6);
 
             return payments;
